@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <form class="contact-form">
+    <h1>Contact Us</h1>
+    <div class="form-input-item">
+      <label for="firstname">First Name *
+        <input type="text" id="firstname">
+        <span class="error-message">This field is required </span>
+      </label>
+      <label for="Last Name">Last Name *
+        <input type="text" id="lastname">
+        <span class="error-message">This field is required </span>
+      </label>
+    </div>
+    <label for="email">
+      Email Address *
+      <input type="email" id="email">
+      <span class="error-message">Please enter a valid email address</span>
+    </label>
+    <div class="radio-group">
+      <label>Query Type *</label>
+      <div class="form-input-item">
+        <label class="label-button" for="General">
+          General Enquiry
+          <input type="radio" name="query" id="general">
+        </label>
+        <label class="label-button" for="Support">
+          Support Request
+          <input type="radio" name="query" id="support">
+        </label>
+
+      </div>
+    </div>
+    <label for="Message" >
+      Message *
+      <textarea class="Message" id="Message"></textarea>
+      <span class="error-message">This field is required</span>
+    </label>
+
+    <label for="check" class="check-user">
+      <input type="checkbox" id="check">
+      <span> I consent to being contacted by the team</span>
+      <span class="error-message">To submit this form, please consent to being contacted</span>
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+
+
+  <!--
+
+  
+  
+  Last Name
+ 
+
+  Email Address
+ 
+  This field is required
+
+ 
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+</body>
+
+</html>
